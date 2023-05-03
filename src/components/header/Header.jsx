@@ -1,13 +1,17 @@
 import React from "react";
+import {useState} from 'react'
 import "./estilos.scss";
 import logo from "../../assets/images/logo.png";
 import Boton from "../boton/Boton";
 import iconoOne from "../../assets/icons/iconoOne.png";
 import iconoTwo from "../../assets/icons/iconoTwo.png";
 const Header = () => {
+
+    const[activeNav, setActiveNav] = useState('#')
+
     const boton = [
         {
-            nombre: "Nuestras Redes",
+            nombre: "Redes Sociales",
             icono: `${iconoTwo}`,
             color: "#EA5455",
         },
@@ -27,7 +31,7 @@ const Header = () => {
             <nav>
                 <ul>
                     <li>
-                        <a href="#">Inicio</a>
+                        <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>Inicio</a>
                     </li>
                     <li>
                         <a href="#">Suscríbete</a>

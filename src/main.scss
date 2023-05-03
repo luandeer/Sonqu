@@ -1,4 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*Crear variables*/
+:root {
+  --color-1: #303841;
+  --color-2: #f6c90e;
+  --color-3: #ea5455;
+  --color-4: #0dc143;
+  --color-text: #fafafa;
+
+  --container-width-lg: 55%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+
+  --transition: all 400ms ease;
+}
 
 * {
   box-sizing: border-box;
@@ -41,4 +56,27 @@ button:hover{
   transform: scale(0.9);
 }
 
+img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*contenedor <div id="root"></div>*/
+#root {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  #root {
+    width: var(--container-width-md);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #root {
+    width: var(--container-width-sm);
+  }
+}
 
