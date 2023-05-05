@@ -1,13 +1,16 @@
 import React from "react";
-import {useState} from 'react'
+import { useState } from 'react'
 import "./estilos.scss";
 import logo from "../../assets/images/logo.png";
 import Boton from "../boton/Boton";
 import iconoOne from "../../assets/icons/iconoOne.png";
 import iconoTwo from "../../assets/icons/iconoTwo.png";
+
+import { Link } from "react-router-dom";
+
 const Header = () => {
 
-    const[activeNav, setActiveNav] = useState('#')
+    const [activeNav, setActiveNav] = useState('/')
 
     const boton = [
         {
@@ -26,27 +29,30 @@ const Header = () => {
         <header>
             <div className="logo">
                 {/**<img src={logo} alt="imagen del logo" /> */}
-                <h1><span>Sonqu</span></h1>
+                <Link to='/' onClick={() => setActiveNav('/')} className={activeNav === '/' ? 'active' : ''} >
+                    <h1><span>Sonqu</span></h1>
+                </Link>
+
             </div>
             <nav>
                 <ul>
                     <li>
-                        <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>Inicio</a>
+                        <Link to="/" onClick={() => setActiveNav('/')} className={activeNav === '/' ? 'active' : ''}>Inicio</Link>
                     </li>
                     <li>
-                        <a href="#">Suscríbete</a>
+                        <Link to="/suscribete" onClick={() => setActiveNav('/suscribete')} className={activeNav === '/suscribete' ? 'active' : ''}>Suscríbete</Link>
                     </li>
                     <li>
-                        <a href="#">Beneficios</a>
+                        <Link to="/beneficios" onClick={() => setActiveNav('/beneficios')} className={activeNav === '/beneficios' ? 'active' : ''}>Beneficios</Link>
                     </li>
                 </ul>
             </nav>
-            <div className="botones-header"> 
-            {boton.map((botones, position) => {
-                return <Boton datos={botones} key={position} />;
-            })}
+            <div className="botones-header">
+                {boton.map((botones, position) => {
+                    return <Boton datos={botones} key={position} />;
+                })}
             </div>
-            
+
         </header>
     );
 };

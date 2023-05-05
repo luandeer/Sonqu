@@ -7,12 +7,12 @@ const Boton = (props) => {
 
     return (
         <>
-            <div className="boton"  style={{ backgroundColor: color }}>
-                <img src={icono} alt="" />
-                <a href="#">
-                    {nombre}
-                </a>
-            </div>
+            <a href="#" className="botones-header" style={{ backgroundColor: color }}>
+                <div className="boton" >
+                    <img src={icono} alt="" />
+                </div>
+                {nombre}
+            </a>
         </>
     );
 };
