@@ -87,7 +87,7 @@ const Suscribete = () => {
                 </div>
                 <div className='container-suscribete-1-2'>
                     <h1 className='title-2'>¡Felicidades ya casi eres miembro de nuestra comunidad!</h1>
-                    <p className='container-suscribete-1-parrafo'>Faltaría realizar el pago y registrar tus datos en nuestro formulario mediante el botón amarillo y asi obtendrás todos los beneficios que ofrece Sonqu.</p>
+                    <p className='container-suscribete-1-parrafo'>Faltaría realizar el pago y registrar tus datos en nuestro formulario mediante el botón y asi obtendrás todos los beneficios que ofrece Sonqu.</p>
                     <a className='container-suscribete-1-boton' href="#">Registrar datos para ser suscriptor</a>
                 </div>
             </div>

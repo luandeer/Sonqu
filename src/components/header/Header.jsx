@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./estilos.scss";
 import logo from "../../assets/images/logo.png";
 import Boton from "../boton/Boton";
+
 import iconoOne from "../../assets/icons/iconoOne.png";
 import iconoTwo from "../../assets/icons/iconoTwo.png";
 
@@ -39,7 +40,7 @@ const Header = () => {
                     onClick={() => setActiveNav("/")}
                     className={activeNav === "/" ? "active" : ""}
                 >
-                    <h1><span>Sonqu</span></h1>
+                    <h1>Sonqu</h1>
                 </Link>
             </div>
             <nav>

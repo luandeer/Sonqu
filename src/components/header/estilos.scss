@@ -113,19 +113,21 @@ nav ul li a.active {
 
     nav ul {
         position: absolute;
-        top: 100px;
+        top: 95px;
         right: 0;
+        left: 0;
         background-color: #FFFFFF;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: end;
+        align-items: center;
         padding: 2rem;
-        width: 140px;
+        width: 90%;
         height: 180px;
         transition: var(--transition);
-        margin: 2rem;
+        margin: 2rem auto;
         border-radius: 20px;
+        filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.10));
     }
 
     .menu-toogle {

@@ -142,6 +142,11 @@
 
 @media screen and (max-width: 600px) {
 
+    .container-home-2-div {
+        grid-template-columns: 1fr;
+        margin-bottom: 1rem;
+    }
+
     .home-botones {
         grid-template-columns: 1fr 1fr;
     }

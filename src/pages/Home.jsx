@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "../components/banner/Banner";
 import portada1 from "../assets/images/portada1.jpg";
 import Videos from "../components/videos/Videos";
-import ericHome from "../assets/images/ericHome.jpg";
+import ericHome from "../assets/images/fotoSonqu.jpg";
 import { BsFacebook } from "react-icons/bs";
 import { BsTiktok } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
@@ -36,7 +36,7 @@ const Home = () => {
                                 </a>
                             </div>
                              */}
-                            <h1>Aquí no hay límites</h1>
+                            <h1>Sin Límites</h1>
                             <p>
                             ¡Se parte de este nuevo espacio web separado de Facebook! y aprovecha nuestros beneficios exclusivos por tan solo S/ 10.00 al mes.
                             </p>
