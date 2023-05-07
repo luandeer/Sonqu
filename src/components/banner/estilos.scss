@@ -1,10 +1,11 @@
 .container-banner{
-    margin: 2rem auto;
+    margin: 0 auto;
     max-width: max-content;
 }
 
 .container-banner img{
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 1.2rem;
+    object-fit: cover;
 }

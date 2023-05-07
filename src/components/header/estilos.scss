@@ -1,25 +1,40 @@
 header {
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 1rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    left: 0;
+    justify-items: stretch;
+    border-radius: 20px;
+    margin-top: 2rem;
 }
 
-.logo img {
-    display: block;
+.logo a h1 {
+    color: var(--color-1);
+    transition: var(--transition);
     width: 120px;
-    height: 50px;
+    min-height: 35px;
+}
+
+.logo a h1:hover {
+    padding-left: 0.3rem;
+    transform: scale(1.02);
+}
+
+.logo a img {
+    width: 120px;
+    min-height: 35px;
+}
+
+.logo img:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 nav ul {
     display: flex;
     gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li a {
@@ -34,6 +49,7 @@ nav ul li a:hover {
     border-radius: 7px;
     filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.25));
 }
+
 nav ul li a.active {
     background-color: var(--color-2);
     padding: 0.5rem 0.8rem;
@@ -41,7 +57,94 @@ nav ul li a.active {
     filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.25));
 }
 
-.botones-header {
+.header-section-3 {
     display: flex;
+    justify-content: flex-end;
     gap: 1rem;
+}
+
+.botones-header-home {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    justify-items: end;
+}
+
+.botones-header-home .botones-header:nth-child(1) {
+    display: none;
+}
+
+.menu-toogle {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    header {
+        border-radius: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 2rem;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .botones-header-home {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .botones-header-home .botones-header:nth-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: end;
+        padding: 2rem;
+        width: 140px;
+        height: 180px;
+        transition: var(--transition);
+        margin: 2rem;
+        border-radius: 20px;
+    }
+
+    .menu-toogle {
+        display: block;
+    }
+
+    .menu-toogle svg {
+        display: block;
+        font-size: 2.5rem;
+        color: var(--color-1);
+    }
+    
+    .menu-toogle svg:hover {
+        transform: scale(1.1);
+    }
+
+
+
+    .botones-header-home .botones-header:nth-child(2) {
+        display: flex;
+    }
 }

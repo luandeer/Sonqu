@@ -2,28 +2,52 @@ import React from "react";
 import Banner from "../components/banner/Banner";
 import portada1 from "../assets/images/portada1.jpg";
 import Videos from "../components/videos/Videos";
+import ericHome from "../assets/images/ericHome.jpg";
+import { BsFacebook } from "react-icons/bs";
+import { BsTiktok } from "react-icons/bs";
+import { BsYoutube } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 
 import "../assets/scss/estilosHome.scss";
 const Home = () => {
     return (
         <>
             <section>
-                <div className="container-home">
+                <div className="container-home-1">
                     <Banner portada={`${portada1}`} />
-                    <div className="container-home-div">
+                </div>
+                <div className="container-home-2">
+                    <div className="container-home-2-div">
+                        <img src={ericHome} alt="" /> 
                         <div className="home-titulo">
-                            <h1>¡Hola familia, soy Sonqu!</h1>
-                            <h2>Te doy la bienvenida a nuestro sitio web oficial </h2>
+                            {/**
+                             * <div className="home-titulo-redes">
+                                <a href="">
+                                    <BsFacebook />
+                                </a>
+                                <a href="">
+                                    <BsTiktok />
+                                </a>
+                                <a href="">
+                                    <BsYoutube />
+                                </a>
+                                <a href="">
+                                    <BsInstagram />
+                                </a>
+                            </div>
+                             */}
+                            <h1>Aquí no hay límites</h1>
+                            <p>
+                            ¡Se parte de este nuevo espacio web separado de Facebook! y aprovecha nuestros beneficios exclusivos por tan solo S/ 10.00 al mes.
+                            </p>
                         </div>
-                        <p>
-                            Aquí podrás acceder a tu suscripción, a los beneficios de convertirte en suscriptor, a todas nuestras redes sociales y a nuestras recetas exquisitas perfectas para ti. A un solo CLICK.
-                        </p>
-                        <div className="home-botones">
-                            <a href="">Quiero ser suscriptor(a)</a>
-                            <a href="">Beneficios por ser suscriptor(a)</a>
-                            <a href="">Visita nuestras redes sociales</a>
-                            <a href="">Ver mas recetas de sonqu</a>
-                        </div>
+                    </div>
+
+                    <div className="home-botones">
+                        <a href="">Quiero ser un suscriptor(a)</a>
+                        <a href="">Beneficios de suscriptor(a)</a>
+                        <a href="">Visita nuestras redes sociales</a>
+                        <a href="">Ver mas recetas de sonqu</a>
                     </div>
                 </div>
 

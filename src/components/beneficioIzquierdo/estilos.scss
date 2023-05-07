@@ -1,0 +1,16 @@
+.container-beneficios-contenido-tarjeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container-beneficios-contenido-tarjeta img{
+    width: 30%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.container-beneficios-contenido-tarjeta-text {
+    width: 30%;
+}
