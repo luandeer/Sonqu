@@ -1,5 +1,5 @@
 .container-beneficios{
-    margin-top: 7.35rem;
+    margin-top: 2rem;
 }
 .container-beneficios-contenido{
     display: flex;
@@ -12,6 +12,7 @@
     padding: 2rem;
     border-radius: 20px;
     gap: 0.2rem;
+    flex: 1 0 100px;
 }
 
 .container-beneficios-contenido-text{

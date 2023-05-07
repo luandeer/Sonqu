@@ -1,0 +1,21 @@
+.tarjeta-derecho{
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 1;
+}
+.tarjeta-derecho img{
+    height: 150px;
+    max-width: 201px;
+    border-radius: 0.5rem;
+}
+.tarjeta-derecho-text {
+    text-align: end;
+    flex-basis: 200px;
+}
+.tarjeta-derecho-text h1{
+    font-size: 1.3rem;
+}

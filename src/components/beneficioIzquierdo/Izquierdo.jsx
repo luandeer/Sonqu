@@ -2,9 +2,9 @@ import React from 'react'
 import './estilos.scss'
 const Izquierdo = (props) => {
     return (
-        <div className='container-beneficios-contenido-tarjeta'>
+        <div className='tarjeta-izquierdo'>
             <img src={props.imagen} alt="" />
-            <div className='container-beneficios-contenido-tarjeta-text'>
+            <div className='tarjeta-izquierdo-text'>
                 <h1>{props.titulo}
                 </h1>
                 <p>{props.descripcion}</p>

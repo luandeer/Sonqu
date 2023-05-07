@@ -1,16 +1,22 @@
-.container-beneficios-contenido-tarjeta{
+.tarjeta-izquierdo{
+    min-width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    flex: 1 1 auto;
 }
-
-.container-beneficios-contenido-tarjeta img{
-    width: 30%;
-    height: auto;
+.tarjeta-izquierdo img{
+    height: 150px;
+    max-width: 201px;
     border-radius: 0.5rem;
 }
+.tarjeta-izquierdo-text {
+    text-align: start;
+    flex-basis: 200px;
+}
 
-.container-beneficios-contenido-tarjeta-text {
-    width: 30%;
+.tarjeta-izquierdo-text h1{
+    font-size: 1.3rem;
 }
