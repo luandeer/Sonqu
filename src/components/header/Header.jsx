@@ -7,7 +7,7 @@ import Boton from "../boton/Boton";
 import iconoOne from "../../assets/icons/iconoOne.png";
 import iconoTwo from "../../assets/icons/iconoTwo.png";
 
-import { ImMenu } from "react-icons/im";
+import { CgMenu } from "react-icons/cg";
 
 import { Link } from "react-router-dom";
 
@@ -40,7 +40,7 @@ const Header = () => {
                     onClick={() => setActiveNav("/")}
                     className={activeNav === "/" ? "active" : ""}
                 >
-                    <h1>Sonqu</h1>
+                    <img src={logo} alt="imagen del logo" />
                 </Link>
             </div>
             <nav>
@@ -86,7 +86,7 @@ const Header = () => {
                 </div>
 
                 <div className="menu-toogle">
-                    <ImMenu  onClick={() => setIsOpen(!isOpen)} />
+                    <CgMenu  onClick={() => setIsOpen(!isOpen)} />
                 </div>
             </div>
         </header>

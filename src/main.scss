@@ -31,7 +31,20 @@ html {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  scrollbar-width: thin;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ea5455;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(223, 61, 61);
 }
 
 body {
@@ -43,17 +56,6 @@ ol,
 ul,
 li {
   list-style: none;
-}
-
-button{
-  color: #FFFFFF;
-  background: #6278F7;
-  padding: 1.3rem 2rem;
-  border-radius: 0.5rem;
-}
-button:hover{
-  cursor: pointer;
-  transform: scale(0.9);
 }
 
 img{
@@ -75,6 +77,9 @@ img{
 }
 
 @media screen and (max-width: 600px) {
+  ::-webkit-scrollbar {
+    scrollbar-width: none;
+  }
   #root {
     width: var(--container-width-sm);
   }

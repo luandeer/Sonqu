@@ -1,12 +1,14 @@
 header {
-    background-color: transparent;
-    padding: 1rem;
+    background-color: #FFFFFF;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items: stretch;
-    border-radius: 20px;
-    margin-top: 2rem;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
 }
 
 .logo a h1 {
@@ -81,9 +83,7 @@ nav ul li a.active {
 @media screen and (max-width: 1024px) {
 
     header {
-        border-radius: 20px;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-bottom: 2rem;
     }
 
     nav {
@@ -113,17 +113,16 @@ nav ul li a.active {
 
     nav ul {
         position: absolute;
-        top: 95px;
-        right: 0;
-        left: 0;
+        top: 60px;
+        right: 5%;
         background-color: #FFFFFF;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         padding: 2rem;
-        width: 90%;
-        height: 180px;
+        width: max-content;
+        height: 175px;
         transition: var(--transition);
         margin: 2rem auto;
         border-radius: 20px;

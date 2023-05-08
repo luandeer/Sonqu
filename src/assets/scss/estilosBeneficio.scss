@@ -1,5 +1,5 @@
 .container-beneficios{
-    margin-top: 2rem;
+    margin-top: 7.35rem;
 }
 .container-beneficios-contenido{
     display: flex;
@@ -8,13 +8,18 @@
     align-items: center;
     background-color: #FFFFFF;
     margin: 2rem auto;
-    background-color: #ffffff;
     padding: 2rem;
     border-radius: 20px;
-    gap: 0.2rem;
-    flex: 1 0 100px;
+    gap: 0.5rem;
 }
 
 .container-beneficios-contenido-text{
     margin-bottom: 1.5rem;
 }
+
+.container-beneficios-contenido-cajas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(250px, 100%),auto));
+    gap: 1rem;
+}
+

@@ -1,5 +1,5 @@
 .container-parrafo{
-    background-color: #F1F6F9;
+    background-color: transparent;
     padding: 2rem;
     border-radius: 10px;
     border: 1px solid #F1F6F9;
@@ -8,7 +8,7 @@
 }
 
 .container-parrafo:hover{
-    background-color: transparent;
+    background-color: #F1F6F9;
 }
 
 .container-parrafo p{

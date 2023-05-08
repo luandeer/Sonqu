@@ -47,6 +47,9 @@ const Suscribete = () => {
 
     const cajas = [
         {
+            descripcion: "Suscríbete en dos pasos: Realiza el pago y registra tus datos en el formulario."
+        },
+        {
             descripcion: "El costo mensual de suscripción es de S/. 10.00 soles. "
         },
         {
@@ -76,14 +79,8 @@ const Suscribete = () => {
             <div className='container-suscribete-1'>
                 <div className='container-suscribete-1-1'>
                     <h1 className='title-1'>¡Sonqu! Te da la bienvenida</h1>
-                    <iframe
-                        className='video'
-                        src="https://www.youtube.com/embed/kmYk6zusCU8"
-                        title="Video"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen>
-                    </iframe>
+                    
+                    <iframe className='video' src="https://www.youtube.com/embed/EbLAtNjwgig" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
                 <div className='container-suscribete-1-2'>
                     <h1 className='title-2'>¡Felicidades ya casi eres miembro de nuestra comunidad!</h1>

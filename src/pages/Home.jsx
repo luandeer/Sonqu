@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "../components/banner/Banner";
 import portada1 from "../assets/images/portada1.jpg";
 import Videos from "../components/videos/Videos";
-import ericHome from "../assets/images/fotoSonqu.jpg";
+import ericHome from "../assets/images/fotoSonqu3.jpg";
 import { BsFacebook } from "react-icons/bs";
 import { BsTiktok } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
@@ -20,8 +20,13 @@ const Home = () => {
                     <div className="container-home-2-div">
                         <img src={ericHome} alt="" /> 
                         <div className="home-titulo">
-                            {/**
-                             * <div className="home-titulo-redes">
+                            
+                            <h1>Unete a la comunidad</h1>
+                            <p>
+                            ¡Se parte de este nuevo espacio web separado de Facebook! y aprovecha nuestros beneficios exclusivos por tan solo S/ 10.00 al mes.
+                            </p>
+                            <p  className="siguenos">Síguenos en:</p>
+                            <div className="home-titulo-redes">
                                 <a href="">
                                     <BsFacebook />
                                 </a>
@@ -35,11 +40,6 @@ const Home = () => {
                                     <BsInstagram />
                                 </a>
                             </div>
-                             */}
-                            <h1>Sin Límites</h1>
-                            <p>
-                            ¡Se parte de este nuevo espacio web separado de Facebook! y aprovecha nuestros beneficios exclusivos por tan solo S/ 10.00 al mes.
-                            </p>
                         </div>
                     </div>
 

@@ -1,11 +1,11 @@
 import React from "react";
 import Banner from "../components/banner/Banner";
 import portada1 from "../assets/images/portada1.jpg";
-import beneficio1 from "../assets/images/beneficiosImg/beneficio1.jpg";
-import beneficio2 from "../assets/images/beneficiosImg/beneficio2.jpg";
-import beneficio3 from "../assets/images/beneficiosImg/beneficios3.jpg";
-import beneficio4 from "../assets/images/beneficiosImg/beneficio4.jpg";
-import beneficio5 from "../assets/images/beneficiosImg/beneficio5.jpg";
+import beneficio1 from "../assets/images/beneficios/beneficio1.png";
+import beneficio2 from "../assets/images/beneficios/beneficio2.png";
+import beneficio3 from "../assets/images/beneficios/beneficio3.png";
+import beneficio4 from "../assets/images/beneficios/beneficio4.png";
+import beneficio5 from "../assets/images/beneficios/beneficio5.png";
 import Izquierdo from "../components/beneficioIzquierdo/Izquierdo";
 import Derecho from "../components/beneficioDerecho/Derecho";
 import "../assets/scss/estilosBeneficio.scss";
@@ -17,6 +17,7 @@ const Beneficios = () => {
         <h1 className="container-beneficios-contenido-text">
           Beneficios del suscriptor:
         </h1>
+        <div className="container-beneficios-contenido-cajas">
         <Izquierdo
           imagen={`${beneficio1}`}
           titulo="Premios cada mes"
@@ -42,6 +43,7 @@ const Beneficios = () => {
           titulo="Contribuirás a las donaciones de caridad"
           descripcion="Parte del dinero de tu suscripción sera donada o utilizada para realizar ayuda social."
         />
+        </div>
       </div>
     </section>
   );
