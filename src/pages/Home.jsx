@@ -12,7 +12,7 @@ import "../assets/scss/estilosHome.scss";
 const Home = () => {
     return (
         <>
-            <section>
+            <section id="home">
                 <div className="container-home-1">
                     <Banner portada={`${portada1}`} />
                 </div>

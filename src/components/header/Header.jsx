@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState,  useRef  } from "react";
 import "./estilos.scss";
 import logo from "../../assets/images/logo.png";
 import Boton from "../boton/Boton";
@@ -8,13 +8,17 @@ import iconoOne from "../../assets/icons/iconoOne.png";
 import iconoTwo from "../../assets/icons/iconoTwo.png";
 
 import { CgMenu } from "react-icons/cg";
-
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Header = () => {
     const [activeNav, setActiveNav] = useState("/");
 
     const [isOpen, setIsOpen] = useState(true);
+
+    //para el boton de desplazamiento al inicio
+    const scrollRef = useRef(null);
+
 
     const boton = [
         {
@@ -30,7 +34,7 @@ const Header = () => {
     ];
 
     return (
-        <header>
+        <header id="header">
             <div className="logo">
                 {/**<img src={logo} alt="imagen del logo" />
          * <h1><span>Sonqu</span></h1>
@@ -90,6 +94,7 @@ const Header = () => {
             </div>
             </nav>
             
+            <a className="header-boton-subir" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} ref={scrollRef}><BsFillArrowUpCircleFill/></a>
         </header>
     );
 };

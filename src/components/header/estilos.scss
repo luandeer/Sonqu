@@ -1,6 +1,7 @@
 header {
     //background-color: rgba(255, 255, 255, 1);
     background-color: #302E46;
+    //background-image: url(../../assets/images/cheficon.png);
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -89,6 +90,15 @@ nav ul li a.active {
     display: none;
 }
 
+.header-boton-subir{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    font-size: 2.5rem;
+    color: #302E46;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1024px) {
 
     header {
@@ -121,7 +131,7 @@ nav ul li a.active {
         position: absolute;
         top: 60px;
         right: 5%;
-        background-color: #FFFFFF;
+        background-color: #302E46;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -142,7 +152,7 @@ nav ul li a.active {
     .menu-toogle svg {
         display: block;
         font-size: 2.5rem;
-        color: var(--color-1);
+        color: var(--color-text);
     }
     
     .menu-toogle svg:hover {
