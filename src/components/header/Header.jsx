@@ -77,8 +77,7 @@ const Header = () => {
                 ) : (
                     <></>
                 )}
-            </nav>
-            <div className="header-section-3">
+                <div className="header-section-3">
                 <div className="botones-header-home">
                     {boton.map((botones, position) => {
                         return <Boton datos={botones} key={position} />;
@@ -89,6 +88,8 @@ const Header = () => {
                     <CgMenu  onClick={() => setIsOpen(!isOpen)} />
                 </div>
             </div>
+            </nav>
+            
         </header>
     );
 };
