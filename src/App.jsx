@@ -3,6 +3,7 @@ import Header from './components/header/Header'
 import Suscribete from './pages/Suscribete'
 import Page404 from './pages/Page404'
 import Beneficios from './pages/Beneficios'
+import Footer from './components/footer/Footer'
 
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='*' element={<Page404/>}/>
         </>
       </Routes>
+      <Footer/>
     </Router>
   )
 }
