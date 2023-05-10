@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../components/banner/Banner";
 import portada1 from "../assets/images/banner1.jpg";
-import Videos from "../components/videos/Videos";
+//import Videos from "../components/videos/Videos";
 import ericHome from "../assets/images/fotoSonqu3.jpg";
 import { BsFacebook } from "react-icons/bs";
 import { BsTiktok } from "react-icons/bs";
@@ -51,14 +51,14 @@ const Home = () => {
                         <Link to="/suscribete">Quiero ser un suscriptor(a)</Link>
                         <Link to="/beneficios">Beneficios de suscriptor(a)</Link>
                         <a href="">Visita nuestras redes sociales</a>
-                        <a href="">Ver mas recetas de sonqu</a>
+                        <a href="https://www.youtube.com/@sonqu/videos" target="_blank">Ver mas recetas de sonqu</a>
                     </div>
                 </div>
 
-                <div className="container-home-videos">
+                {/**<div className="container-home-videos">
                     <h1>Recetas Exclusivas</h1>
-                    <Videos />
-                </div>
+                    
+                </div> */}
             </section>
         </>
     );
