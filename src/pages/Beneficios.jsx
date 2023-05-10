@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../components/banner/Banner";
-import portada1 from "../assets/images/portada1.jpg";
+import portada1 from "../assets/images/banner2.jpg";
 import beneficio1 from "../assets/images/beneficios/beneficio1.png";
 import beneficio2 from "../assets/images/beneficios/beneficio2.png";
 import beneficio3 from "../assets/images/beneficios/beneficio3.png";

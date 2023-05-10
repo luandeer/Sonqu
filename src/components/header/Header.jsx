@@ -25,11 +25,13 @@ const Header = () => {
             nombre: "Recetas",
             icono: `${iconoTwo}`,
             color: "#EA5455",
+            link: ""
         },
         {
             nombre: "Contáctame",
             icono: `${iconoOne}`,
             color: "#0DC143",
+            link: "https://api.whatsapp.com/send?phone=51967502750&text=Hola,%20sonqu.%20Te%20escribo%20desde%20tu%20sitio%20web..."
         },
     ];
 

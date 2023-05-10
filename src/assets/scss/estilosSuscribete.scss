@@ -74,7 +74,8 @@ section{
 }
 
 .container-suscribete-1-boton:hover{
-    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.25));
+    background-color: #d33131;
+    transform: scale(0.99);
 }
 //Fin container-suscribete-1
 
@@ -134,8 +135,12 @@ section{
     padding: 0.6rem;
     border-radius: 0.5rem;
     font-weight: 600;
-    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.25));
     text-align: center;
+}
+
+.container-suscribete-3-boton:hover{
+    background-color: #d33131;
+    transform: scale(0.99);
 }
 
 //Fin container-suscribete-3

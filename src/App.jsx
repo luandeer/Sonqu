@@ -4,6 +4,8 @@ import Suscribete from './pages/Suscribete'
 import Page404 from './pages/Page404'
 import Beneficios from './pages/Beneficios'
 
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+
 //usamos as para poner un alias
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 
@@ -12,6 +14,7 @@ function App() {
   return (
     <Router>
       <Header/>
+      <ScrollToTop />
       <Routes>
         <>
         <Route exact path="/*" element={<Navigate to="/" />} />
