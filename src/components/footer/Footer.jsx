@@ -31,7 +31,7 @@ const Footer = () => {
 
                     <Link to="/beneficios">Beneficios</Link>
 
-                    <a href="https://api.whatsapp.com/send?phone=51967502750&text=Hola,%20sonqu.%20Te%20escribo%20desde%20tu%20sitio%20web..." target="_blank">Whatsapp(se atiende de 8am-6pm)</a>
+                    <a href="https://api.whatsapp.com/send?phone=51938091040&text=Hola,%20sonqu.%20Te%20escribo%20desde%20tu%20sitio%20web..." target="_blank">Whatsapp(se atiende de 8am-6pm)</a>
                 </p>
 
                 <p> copyright &copy; 2023 | Telmo P.</p>
