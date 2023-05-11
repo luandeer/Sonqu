@@ -94,6 +94,7 @@ const Header = () => {
                                 <li>
                                     <NavLink
                                         end
+                                        onClick={()=>setIsOpen(!isOpen)}
                                         className={({ isActive }) => (isActive ? "active" : "")}
                                         to="/"
                                     >
@@ -103,6 +104,7 @@ const Header = () => {
                                 <li>
                                     <NavLink
                                         end
+                                        onClick={()=>setIsOpen(!isOpen)}
                                         className={({ isActive }) => (isActive ? "active" : "")}
                                         to="/suscribete"
                                     >
@@ -112,6 +114,7 @@ const Header = () => {
                                 <li>
                                     <NavLink
                                         end
+                                        onClick={()=>setIsOpen(!isOpen)}
                                         className={({ isActive }) => (isActive ? "active" : "")}
                                         to="/beneficios"
                                     >

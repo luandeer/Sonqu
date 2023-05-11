@@ -108,7 +108,7 @@ const Suscribete = () => {
                     }
                 </div>
 
-                <a className='container-suscribete-3-boton' href="https://api.whatsapp.com/send?phone=51967502750&text=Hola,%20sonqu.%20Voy%20a%20enviarte%20la%20captura%20del%20pago%20que%20acabo%20de%20hacer." target='_blank'>Enviar captura al whatsapp</a>
+                <a className='container-suscribete-3-boton' href="https://api.whatsapp.com/send?phone=51938091040&text=Hola,%20sonqu.%20Voy%20a%20enviarte%20la%20captura%20del%20pago%20que%20acabo%20de%20hacer." target='_blank'>Enviar captura al whatsapp</a>
             </div>
 
         </section>
