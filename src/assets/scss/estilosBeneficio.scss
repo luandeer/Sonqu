@@ -23,3 +23,30 @@
     gap: 1rem;
 }
 
+.beneficios-boton{
+    margin-top: 1rem;
+    color: var(--color-text);
+    background-color: var(--color-3);
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.beneficios-boton:hover{
+    background-color: #d33131;
+    transform: scale(0.99);
+}
+
+@media screen and (max-width: 1024px) {
+    .beneficios-boton{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .beneficios-boton{
+        width: 100%;
+    }
+}
+

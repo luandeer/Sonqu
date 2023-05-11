@@ -9,6 +9,8 @@ import beneficio5 from "../assets/images/beneficios/beneficio5.png";
 import Izquierdo from "../components/beneficioIzquierdo/Izquierdo";
 import Derecho from "../components/beneficioDerecho/Derecho";
 import "../assets/scss/estilosBeneficio.scss";
+import { Link } from "react-router-dom";
+
 const Beneficios = () => {
   return (
     <section className="container-beneficios">
@@ -44,6 +46,8 @@ const Beneficios = () => {
           descripcion="Parte del dinero de tu suscripción sera donada o utilizada para realizar ayuda social."
         />
         </div>
+
+        <Link className='beneficios-boton' to="/suscribete">¡Únete YA que cada vez somos más!</Link>
       </div>
     </section>
   );

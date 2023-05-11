@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import "./estilos.scss";
 import logo from "../../assets/images/logo.png";
 import Boton from "../boton/Boton";
@@ -8,13 +8,12 @@ import iconoOne from "../../assets/icons/iconoOne.png";
 import iconoTwo from "../../assets/icons/iconoTwo.png";
 
 import { CgMenu } from "react-icons/cg";
+import { CgCloseO } from "react-icons/cg";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-    const [activeNav, setActiveNav] = useState("/");
-
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
     //para el boton de desplazamiento al inicio
     const scrollRef = useRef(null);
@@ -35,11 +34,11 @@ const Header = () => {
     ];
 
     // useEffect para limpiar el estado de la ruta anterior
-    useEffect(() => {
-        return () => {
-            setActiveNav("");
-        };
-    }, [activeNav]);
+    /** useEffect(() => {
+              return () => {
+                  setActiveNav("");
+              };
+          }, [activeNav]); */
 
     return (
         <header id="header">
@@ -47,48 +46,41 @@ const Header = () => {
                 {/**<img src={logo} alt="imagen del logo" />
          * <h1><span>Sonqu</span></h1>
          */}
-                <NavLink
-                    to="/"
-                    onClick={() => setActiveNav("/")}
-                    className={activeNav === "/" ? "active" : ""}
-                >
+                <NavLink to="/">
                     <img src={logo} alt="imagen del logo" />
                 </NavLink>
             </div>
             <nav>
-                {isOpen === true ? (
-                    <ul>
-                        <li>
-                            <NavLink
-                                to="/"
-                                onClick={() => setActiveNav("/")}
-                                className={activeNav === "/" ? "active" : ""}
-                            >
-                                Inicio
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                to="/suscribete"
-                                onClick={() => setActiveNav("/suscribete")}
-                                className={activeNav === "/suscribete" ? "active" : ""}
-                            >
-                                Suscríbete
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                to="/beneficios"
-                                onClick={() => setActiveNav("/beneficios")}
-                                className={activeNav === "/beneficios" ? "active" : ""}
-                            >
-                                Beneficios
-                            </NavLink>
-                        </li>
-                    </ul>
-                ) : (
-                    <></>
-                )}
+                <ul>
+                    <li>
+                        <NavLink
+                            className={({ isActive }) => (isActive ? "active" : "")}
+                            to="/"
+                            end
+                        >
+                            Inicio
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            className={({ isActive }) => (isActive ? "active" : "")}
+                            to="/suscribete"
+                            end
+                        >
+                            Suscríbete
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            className={({ isActive }) => (isActive ? "active" : "")}
+                            to="/beneficios"
+                            end
+                        >
+                            Beneficios
+                        </NavLink>
+                    </li>
+                </ul>
+
                 <div className="header-section-3">
                     <div className="botones-header-home">
                         {boton.map((botones, position) => {
@@ -96,8 +88,50 @@ const Header = () => {
                         })}
                     </div>
 
+                    <div className="nav-togle">
+                        {isOpen === true ? (
+                            <ul>
+                                <li>
+                                    <NavLink
+                                        end
+                                        className={({ isActive }) => (isActive ? "active" : "")}
+                                        to="/"
+                                    >
+                                        Inicio
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink
+                                        end
+                                        className={({ isActive }) => (isActive ? "active" : "")}
+                                        to="/suscribete"
+                                    >
+                                        Suscríbete
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink
+                                        end
+                                        className={({ isActive }) => (isActive ? "active" : "")}
+                                        to="/beneficios"
+                                    >
+                                        Beneficios
+                                    </NavLink>
+                                </li>
+                            </ul>
+                        ) : (
+                            <></>
+                        )}
+                    </div>
+
                     <div className="menu-toogle">
+                        
+                        {isOpen === false ? (
                         <CgMenu onClick={() => setIsOpen(!isOpen)} />
+
+                        ) : (
+                            <CgCloseO onClick={() => setIsOpen(!isOpen)}/>
+                        )}
                     </div>
                 </div>
             </nav>

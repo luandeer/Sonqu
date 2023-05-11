@@ -26,7 +26,7 @@ const Suscribete = () => {
         {
             img: `${bcp}`,
             descripcion: "Cuenta",
-            numeroCuenta: "04 476 246135"
+            numeroCuenta: "41070493470017"
         },
         {
             img: `${cajaHuancayo}`,
@@ -36,12 +36,12 @@ const Suscribete = () => {
         {
             img: `${interbank}`,
             descripcion: "Cuenta",
-            numeroCuenta: "410 70493470 0 17"
+            numeroCuenta: "5463005054600"
         },
         {
             img: `${yapePlin}`,
             descripcion: "Número de teléfono",
-            numeroCuenta: "923 996 816"
+            numeroCuenta: "938 091 040"
         }
     ];
 
@@ -50,7 +50,7 @@ const Suscribete = () => {
             descripcion: "Suscríbete en dos pasos: Realiza el pago y registra tus datos en el formulario."
         },
         {
-            descripcion: "El costo mensual de suscripción es de S/. 10.00 soles. "
+            descripcion: "El costo mensual de suscripción es de S/. 8.50 soles. "
         },
         {
             descripcion: "La suscripción dura un mes calendario. "
@@ -65,7 +65,7 @@ const Suscribete = () => {
             descripcion: "Los datos deben ser registrados de manera correcta. "
         },
         {
-            descripcion: "El número de teléfono oficial es 923 996 816 "
+            descripcion: "El número de teléfono oficial es 938 091 040."
         },
         {
             descripcion: "Enviar la captura del pago(INDISPENSABLE) al número de teléfono oficial. "
@@ -84,8 +84,8 @@ const Suscribete = () => {
                 </div>
                 <div className='container-suscribete-1-2'>
                     <h1 className='title-2'>¡Felicidades ya casi eres miembro de nuestra comunidad!</h1>
-                    <p className='container-suscribete-1-parrafo'>Faltaría realizar el pago y registrar tus datos en nuestro formulario mediante el botón y asi obtendrás todos los beneficios que ofrece Sonqu.</p>
-                    <a className='container-suscribete-1-boton' href="#">Registrar datos para ser suscriptor</a>
+                    <p className='container-suscribete-1-parrafo'>Faltaría realizar el pago y registrar tus datos en nuestro formulario mediante el botón rojo y asi obtendrás todos los beneficios que ofrece Sonqu.</p>
+                    <a className='container-suscribete-1-boton' href="https://forms.gle/5Ea4yKFKCXYdnxGp8" target='_blank'>Registrar datos para ser suscriptor</a>
                 </div>
             </div>
 

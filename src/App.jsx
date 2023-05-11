@@ -17,13 +17,11 @@ function App() {
       <Header/>
       <ScrollToTop />
       <Routes>
-        <>
-        <Route exact path="/*" element={<Navigate to="/" />} />
-        <Route exact path='/' element={<Home/>}/>
-        <Route exact path='/suscribete' element={<Suscribete/>}/>
-        <Route exact path='/beneficios' element={<Beneficios/>}/>
+        <Route path='/' element={<Home/>}/>
+        <Route path="/*" element={<Navigate to="/" />} />
+        <Route path='/suscribete' element={<Suscribete/>}/>
+        <Route path='/beneficios' element={<Beneficios/>}/>
         <Route path='*' element={<Page404/>}/>
-        </>
       </Routes>
       <Footer/>
     </Router>

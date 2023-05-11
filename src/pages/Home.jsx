@@ -22,10 +22,10 @@ const Home = () => {
                     <div className="container-home-2-div">
                         <img src={ericHome} alt="" />
                         <div className="home-titulo">
-                            <h1>Unete a la comunidad</h1>
+                            <h1>¡Unete a la comunidad!</h1>
                             <p>
-                                ¡Se parte de este nuevo espacio web separado de Facebook! y
-                                aprovecha nuestros beneficios exclusivos por tan solo S/ 10.00
+                                "Se parte de este nuevo espacio web separado de Facebook" y
+                                aprovecha nuestros beneficios exclusivos por tan solo S/ 8.50
                                 al mes.
                             </p>
                             <p className="siguenos">Síguenos en nuestras redes:</p>
@@ -50,7 +50,7 @@ const Home = () => {
                     <div className="home-botones">
                         <Link to="/suscribete">Quiero ser un suscriptor(a)</Link>
                         <Link to="/beneficios">Beneficios de suscriptor(a)</Link>
-                        <a href="">Visita nuestras redes sociales</a>
+                        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fbeacons.ai%2Fsonqu.oficial%3Ffbclid%3DIwAR3dckm6nIiCPHAXNB_2dwu2ztqmsOHConMjPbFMRuiuEbiTdhG5Sg8AG80&h=AT395r7ou25YxFB4Y2KFLncBO_RXZBt66_GEfFiDFW8VccEdpkHJiMOcvPHEMqs1YxGRAJF-jshXf4-jKnsXbRLKC5ZGeb3ZsGfWndrNGrEEgofBLq5ahtOm1ge1kuabqMi-HQ" target="_blank">Visita nuestras redes sociales</a>
                         <a href="https://www.youtube.com/@sonqu/videos" target="_blank">Ver mas recetas de sonqu</a>
                     </div>
                 </div>
