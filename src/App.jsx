@@ -9,12 +9,18 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 //usamos as para poner un alias
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 function App() {
   
   return (
     <Router>
       <Header/>
+      <Helmet>
+        <title>Sonqu Oficial</title>
+        <meta name='description' content='Se parte de sonqu y gana increíbles premios cada mes.'/>
+        <meta name='keywords' content='sonqu, SONQU, Sonqu, Sonquoficial, Sonquoficial, sonqu suscriptores, sonqu colaboradores, sonqu sorteos'/>
+      </Helmet>
       <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home/>}/>
