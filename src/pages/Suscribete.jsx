@@ -41,7 +41,7 @@ const Suscribete = () => {
         {
             img: `${yapePlin}`,
             descripcion: "Número de teléfono",
-            numeroCuenta: "938 091 040"
+            numeroCuenta: "923 996 816"
         }
     ];
 
@@ -82,7 +82,7 @@ const Suscribete = () => {
                 <div className='container-suscribete-1-2'>
                     <h1 className='title-2'>¡Felicidades ya casi eres miembro de nuestra comunidad!</h1>
                     <p className='container-suscribete-1-parrafo'>Solo faltaría realizar el pago y registrar tus datos en nuestro formulario mediante el botón rojo y asi obtendrás todos los beneficios que ofrece Sonqu.</p>
-                    <a className='container-suscribete-1-boton' href="https://forms.gle/5Ea4yKFKCXYdnxGp8" target='_blank'>¡REGÍSTRATE AQUÍ!</a>
+                    <a className='container-suscribete-1-boton' href="https://forms.gle/5Ea4yKFKCXYdnxGp8" target='_blank'>Regístra tus datos Aquí</a>
                 </div>
             </div>
 
@@ -105,7 +105,7 @@ const Suscribete = () => {
                     }
                 </div>
 
-                <a className='container-suscribete-3-boton' href="https://api.whatsapp.com/send?phone=51938091040&text=Hola,%20sonqu.%20Voy%20a%20enviarte%20la%20captura%20del%20pago%20que%20acabo%20de%20hacer." target='_blank'>Enviar captura del pago al whatsapp</a>
+                <a className='container-suscribete-3-boton' href="https://api.whatsapp.com/send?phone=51938091040&text=Hola,%20sonqu.%20Voy%20a%20enviarte%20la%20captura%20del%20pago%20que%20acabo%20de%20hacer." target='_blank'>Envía captura del pago al whatsapp</a>
             </div>
 
         </section>

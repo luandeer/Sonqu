@@ -148,6 +148,7 @@ section{
 @media screen and (max-width: 1024px) {
     .container-suscribete-1{
         grid-template-columns: 1fr;  
+        gap: 0.5rem;
     }
     iframe{
         margin-bottom: 0;
@@ -170,6 +171,7 @@ section{
 
     .container-suscribete-1{
         grid-template-columns: 1fr;  
+        gap: 0.5rem;
     }
     
     .container-suscribete-2{
