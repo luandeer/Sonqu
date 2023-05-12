@@ -47,7 +47,7 @@ const Beneficios = () => {
         />
         </div>
 
-        <Link className='beneficios-boton' to="/suscribete">¡Únete YA que cada vez somos más!</Link>
+        <Link className='beneficios-boton' to="/suscribete">¡Únete YA, que cada vez somos más!</Link>
       </div>
     </section>
   );

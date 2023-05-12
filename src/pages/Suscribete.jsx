@@ -47,10 +47,10 @@ const Suscribete = () => {
 
     const cajas = [
         {
-            descripcion: "Suscríbete en dos pasos: Realiza el pago y registra tus datos en el formulario."
+            descripcion: "Suscríbete solo en dos pasos: Realiza el pago y registra tus datos en el formulario."
         },
         {
-            descripcion: "El costo mensual de suscripción es de S/. 8.50 soles. "
+            descripcion: "El costo mensual de la suscripción es de S/. 8.50 soles. "
         },
         {
             descripcion: "La suscripción dura un mes calendario. "
@@ -65,10 +65,7 @@ const Suscribete = () => {
             descripcion: "Los datos deben ser registrados de manera correcta. "
         },
         {
-            descripcion: "El número de teléfono oficial es 938 091 040."
-        },
-        {
-            descripcion: "Enviar la captura del pago(INDISPENSABLE) al número de teléfono oficial. "
+            descripcion: "Enviar la captura del pago(NECESARIO) al número de teléfono oficial(938 091 040). "
         }
     ];
 
@@ -80,12 +77,12 @@ const Suscribete = () => {
                 <div className='container-suscribete-1-1'>
                     <h1 className='title-1'>¡Sonqu! Te da la bienvenida</h1>
                     
-                    <iframe className='video' src="https://www.youtube.com/embed/EbLAtNjwgig" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    <iframe className='video' src="https://www.youtube.com/embed/S8HDfxBSa34" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
                 <div className='container-suscribete-1-2'>
                     <h1 className='title-2'>¡Felicidades ya casi eres miembro de nuestra comunidad!</h1>
-                    <p className='container-suscribete-1-parrafo'>Faltaría realizar el pago y registrar tus datos en nuestro formulario mediante el botón rojo y asi obtendrás todos los beneficios que ofrece Sonqu.</p>
-                    <a className='container-suscribete-1-boton' href="https://forms.gle/5Ea4yKFKCXYdnxGp8" target='_blank'>Registrar datos para ser suscriptor</a>
+                    <p className='container-suscribete-1-parrafo'>Solo faltaría realizar el pago y registrar tus datos en nuestro formulario mediante el botón rojo y asi obtendrás todos los beneficios que ofrece Sonqu.</p>
+                    <a className='container-suscribete-1-boton' href="https://forms.gle/5Ea4yKFKCXYdnxGp8" target='_blank'>¡REGÍSTRATE AQUÍ!</a>
                 </div>
             </div>
 
@@ -108,7 +105,7 @@ const Suscribete = () => {
                     }
                 </div>
 
-                <a className='container-suscribete-3-boton' href="https://api.whatsapp.com/send?phone=51938091040&text=Hola,%20sonqu.%20Voy%20a%20enviarte%20la%20captura%20del%20pago%20que%20acabo%20de%20hacer." target='_blank'>Enviar captura al whatsapp</a>
+                <a className='container-suscribete-3-boton' href="https://api.whatsapp.com/send?phone=51938091040&text=Hola,%20sonqu.%20Voy%20a%20enviarte%20la%20captura%20del%20pago%20que%20acabo%20de%20hacer." target='_blank'>Enviar captura del pago al whatsapp</a>
             </div>
 
         </section>

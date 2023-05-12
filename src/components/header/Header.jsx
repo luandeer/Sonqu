@@ -33,12 +33,6 @@ const Header = () => {
         },
     ];
 
-    // useEffect para limpiar el estado de la ruta anterior
-    /** useEffect(() => {
-              return () => {
-                  setActiveNav("");
-              };
-          }, [activeNav]); */
 
     return (
         <header id="header">
