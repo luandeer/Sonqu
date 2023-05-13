@@ -8,11 +8,19 @@ import bbva from '../assets/images/BBVA.jpg'
 import bcp from '../assets/images/bcp.jpg'
 import cajaHuancayo from '../assets/images/cajaHuancayo.jpg'
 import interbank from '../assets/images/interbank.jpg'
-import yapePlin from  '../assets/images/yapePlin.png'
+import yapePlin from '../assets/images/yapePlin.png'
 
+import {BsWhatsapp} from 'react-icons/bs'
+import {RxEyeOpen} from 'react-icons/rx'
+import {MdOutlineOpenInNew} from 'react-icons/md'
 const Suscribete = () => {
 
     const tarjetas = [
+        {
+            img: `${yapePlin}`,
+            descripcion: "Número de teléfono",
+            numeroCuenta: "923 996 816"
+        },
         {
             img: `${bancoNacion}`,
             descripcion: "Cuenta",
@@ -37,11 +45,6 @@ const Suscribete = () => {
             img: `${interbank}`,
             descripcion: "Cuenta",
             numeroCuenta: "5463005054600"
-        },
-        {
-            img: `${yapePlin}`,
-            descripcion: "Número de teléfono",
-            numeroCuenta: "923 996 816"
         }
     ];
 
@@ -76,13 +79,17 @@ const Suscribete = () => {
             <div className='container-suscribete-1'>
                 <div className='container-suscribete-1-1'>
                     <h1 className='title-1'>¡Sonqu! Te da la bienvenida</h1>
-                    
+
                     <iframe className='video' src="https://www.youtube.com/embed/S8HDfxBSa34" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
                 <div className='container-suscribete-1-2'>
                     <h1 className='title-2'>¡Felicidades ya casi eres miembro de nuestra comunidad!</h1>
-                    <p className='container-suscribete-1-parrafo'>Solo faltaría realizar el pago y registrar tus datos en nuestro formulario mediante el botón rojo y asi obtendrás todos los beneficios que ofrece Sonqu.</p>
-                    <a className='container-suscribete-1-boton' href="https://forms.gle/5Ea4yKFKCXYdnxGp8" target='_blank'>Regístra tus datos Aquí</a>
+
+                    <p className='container-suscribete-1-parrafo'>Solo faltaría realizar el pago(envíanos la captura) y registrar tus datos en nuestro formulario mediante el botón rojo y asi obtendrás todos los beneficios que ofrece Sonqu.</p>
+                    <a className='container-suscribete-1-boton' href="#pagos" ><RxEyeOpen/>Ver los medios de pago</a>
+                    <a className='container-suscribete-3-boton' href="https://api.whatsapp.com/send?phone=51938091040&text=Hola,%20sonqu.%20Voy%20a%20enviarte%20la%20captura%20del%20pago%20que%20acabo%20de%20hacer." target='_blank'><BsWhatsapp/>Enviar captura del pago</a>
+                    <a className='container-suscribete-1-boton' href="https://forms.gle/5Ea4yKFKCXYdnxGp8" target='_blank'><MdOutlineOpenInNew/>Regístra tus datos Aquí</a>
+
                 </div>
             </div>
 
@@ -95,17 +102,17 @@ const Suscribete = () => {
                 }
             </div>
 
-            <div className="container-suscribete-3">
+            <div id='pagos' className="container-suscribete-3">
                 <h1>Medios de pago (a nombre de Eric Raul Layme Reginaldo)</h1>
                 <div className='container-suscribete-3-tarjetas'>
                     {
-                        tarjetas.map((tarjeta, position)=>{
+                        tarjetas.map((tarjeta, position) => {
                             return <Tarjetas imagen={tarjeta} key={position}></Tarjetas>;
                         })
                     }
                 </div>
 
-                <a className='container-suscribete-3-boton' href="https://api.whatsapp.com/send?phone=51938091040&text=Hola,%20sonqu.%20Voy%20a%20enviarte%20la%20captura%20del%20pago%20que%20acabo%20de%20hacer." target='_blank'>Envía captura del pago al whatsapp</a>
+                <a className='container-suscribete-3-boton' href="https://api.whatsapp.com/send?phone=51938091040&text=Hola,%20sonqu.%20Voy%20a%20enviarte%20la%20captura%20del%20pago%20que%20acabo%20de%20hacer." target='_blank'><BsWhatsapp/>Enviar captura del pago</a>
             </div>
 
         </section>

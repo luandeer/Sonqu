@@ -65,12 +65,18 @@ section{
 }
 
 .container-suscribete-1-boton{
+    width: max-content;
+    align-self: center;
     color: var(--color-text);
     background-color: var(--color-3);
     padding: 0.6rem;
     border-radius: 0.5rem;
     font-weight: 600;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    align-items: center;
 }
 
 .container-suscribete-1-boton:hover{
@@ -130,12 +136,18 @@ section{
 }
 
 .container-suscribete-3-boton{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    align-items: center;
     color: var(--color-text);
     background-color: var(--color-3);
     padding: 0.6rem;
     border-radius: 0.5rem;
     font-weight: 600;
     text-align: center;
+    align-self: center;
 }
 
 .container-suscribete-3-boton:hover{
