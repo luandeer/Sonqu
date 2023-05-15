@@ -7,6 +7,10 @@ import { BsFacebook } from "react-icons/bs";
 import { BsTiktok } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
+import { GiClick} from "react-icons/gi";
+import {RxEyeOpen} from 'react-icons/rx';
+import {TbSocial} from 'react-icons/tb';
+
 
 import { Link } from "react-router-dom";
 
@@ -24,34 +28,25 @@ const Home = () => {
                         <div className="home-titulo">
                             <h1>¡Unete a la comunidad!</h1>
                             <p>
-                                "Se parte de este nuevo espacio web separado de Facebook" y
+                                Se parte de este nuevo espacio web de "Sonqu" y
                                 aprovecha nuestros beneficios exclusivos por tan solo S/ 8.50
                                 al mes.
                             </p>
-                            <p className="siguenos">Síguenos en nuestras redes:</p>
-                            <div className="home-titulo-redes">
-                                <a href="https://www.facebook.com/Sonquoficial" target="_blank">
-                                    <BsFacebook />
-                                </a>
-                                <a href="https://www.tiktok.com/@sonquoficial" target="_blank">
-                                    <BsTiktok />
-                
-                                </a>
-                                <a href="https://www.youtube.com/@sonqu" target="_blank">
-                                    <BsYoutube />
-                                </a>
-                                <a href="https://www.instagram.com/sonqu.oficial/" target="_blank">
-                                    <BsInstagram />
-                                </a>
-                            </div>
+                            <p className="siguenos">Pasos para ser suscriptor:</p>
+                            <ul>
+                                <li>- Realizar el pago de<h1>s/8.50</h1></li>
+                                <li>- Enviar la captura de pago al whatsapp</li>
+                                <li>- Registrar tus datos en el formulario</li>
+                            </ul>
+
                         </div>
                     </div>
 
                     <div className="home-botones">
-                        <Link to="/suscribete">Quiero ser un suscriptor(a)</Link>
-                        <Link to="/beneficios">Beneficios de suscriptor(a)</Link>
-                        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fbeacons.ai%2Fsonqu.oficial%3Ffbclid%3DIwAR3dckm6nIiCPHAXNB_2dwu2ztqmsOHConMjPbFMRuiuEbiTdhG5Sg8AG80&h=AT395r7ou25YxFB4Y2KFLncBO_RXZBt66_GEfFiDFW8VccEdpkHJiMOcvPHEMqs1YxGRAJF-jshXf4-jKnsXbRLKC5ZGeb3ZsGfWndrNGrEEgofBLq5ahtOm1ge1kuabqMi-HQ" target="_blank">Visita nuestras redes sociales</a>
-                        <a href="https://www.youtube.com/@sonqu/videos" target="_blank">Ver mas recetas de sonqu</a>
+                        <Link to="/suscribete"><GiClick/>Quiero ser un suscriptor(a)</Link>
+                        <Link to="/beneficios"><RxEyeOpen/>Beneficios de suscriptor(a)</Link>
+                        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fbeacons.ai%2Fsonqu.oficial%3Ffbclid%3DIwAR3dckm6nIiCPHAXNB_2dwu2ztqmsOHConMjPbFMRuiuEbiTdhG5Sg8AG80&h=AT395r7ou25YxFB4Y2KFLncBO_RXZBt66_GEfFiDFW8VccEdpkHJiMOcvPHEMqs1YxGRAJF-jshXf4-jKnsXbRLKC5ZGeb3ZsGfWndrNGrEEgofBLq5ahtOm1ge1kuabqMi-HQ" target="_blank"><TbSocial/>Visita nuestras redes sociales</a>
+                        <a href="https://www.youtube.com/@sonqu/videos" target="_blank"><GiClick/>Ver mas recetas de sonqu</a>
                     </div>
                 </div>
 

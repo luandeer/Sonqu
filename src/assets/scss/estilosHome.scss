@@ -49,47 +49,27 @@
 
 .home-titulo p {
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 500;
     text-align: justify;
 }
 
-.home-titulo-redes {
+.home-titulo ul {
+    padding-left: 0.5rem;
+    text-align: justify;
+}
+
+.home-titulo ul li:nth-child(1){
     display: flex;
-    gap: 0.3rem;
-    margin-top: 0.35rem;
+    align-items: baseline;
+    width: max-content;
+    height: 0;
+    margin-bottom: 1.75rem;
 }
 
-.home-titulo-redes a {
-    padding: 0.45rem;
-    border-radius: 2rem;
-    font-size: 1.2rem;
-    background-color: transparent;
-    color: #764441;
-    border: 1px solid #764441;
-    transition: var(--transition);
+.home-titulo ul li:nth-child(1) h1{
+    font-size: 1rem;
+    margin-left: 0.3rem;
 }
-
-.home-titulo-redes a svg {
-    display: block;
-}
-
-.home-titulo-redes a:nth-child(1):hover {
-    color: #2374e1;
-}
-
-.home-titulo-redes a:nth-child(2):hover {
-    color: black;
-}
-
-.home-titulo-redes a:nth-child(3):hover {
-    color: #ff0000;
-}
-
-.home-titulo-redes a:nth-child(4):hover {
-    color: rgb(225, 48, 108);
-}
-
-
 
 .container-home-2-div img {
     max-width: 300px;
@@ -106,17 +86,24 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
+    gap: 0.5rem;
+    padding: 0 2rem 2rem 2rem;
 }
 
 .home-botones a {
     color: var(--color-text);
     background-color: var(--color-3);
-    padding: 1.5rem;
+    padding: 0.5rem 0.5rem;
     font-size: 1.05rem;
     font-weight: 600;
     text-align: center;
     border: 1px solid #df4141d5;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 10px;
 }
 
 .home-botones a:hover {
@@ -124,12 +111,10 @@
     transform: scale(0.99);
 }
 
-.home-botones a:nth-child(1) {
-    border-radius: 0 0 0 20px;
-}
-
-.home-botones a:nth-child(4) {
-    border-radius: 0 0 20px 0;
+.home-botones a svg{
+    display: block;
+    font-size: 2rem;
+    
 }
 
 //fin contenedor 2
@@ -154,10 +139,6 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .home-botones a:nth-child(3) {
-        border-radius: 0 0 20px 0;
-    }
-
     .home-botones a:nth-child(4) {
         display: none;
     }
@@ -176,10 +157,6 @@
     .home-botones a {
         padding: 1.5rem;
         font-size: 1rem;
-    }
-
-    .home-botones a:nth-child(2) {
-        border-radius: 0 0 20px 0;
     }
 
     .home-botones a:nth-child(3) {
