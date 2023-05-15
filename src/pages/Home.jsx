@@ -24,7 +24,7 @@ const Home = () => {
                 </div>
                 <div className="container-home-2">
                     <div className="container-home-2-div">
-                        <img src={ericHome} alt="" />
+                        <img src={ericHome} alt="foto de sonqu" />
                         <div className="home-titulo">
                             <h1>¡Unete a la comunidad!</h1>
                             <p>
@@ -35,10 +35,9 @@ const Home = () => {
                             <p className="siguenos">Pasos para ser suscriptor:</p>
                             <ul>
                                 <li>- Realizar el pago de<h1>s/8.50</h1></li>
-                                <li>- Enviar la captura de pago al whatsapp</li>
+                                <li>- Enviar la captura de pago</li>
                                 <li>- Registrar tus datos en el formulario</li>
                             </ul>
-
                         </div>
                     </div>
 
