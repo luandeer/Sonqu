@@ -24,7 +24,7 @@ const Suscribete = () => {
         {
             img: `${bancoNacion}`,
             descripcion: "Cuenta",
-            numeroCuenta: "345 3067457335"
+            numeroCuenta: "04 476 246135"
         },
         {
             img: `${bbva}`,
@@ -44,7 +44,7 @@ const Suscribete = () => {
         {
             img: `${interbank}`,
             descripcion: "Cuenta",
-            numeroCuenta: "5463005054600"
+            numeroCuenta: "3453067457335"
         }
     ];
 
