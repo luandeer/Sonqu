@@ -28,12 +28,12 @@ const Beneficios = () => {
         <Derecho
           imagen={`${beneficio2}`}
           titulo="Cupón de descuento exclusivo"
-          descripcion="Tendras un buen descuento en los productos de Quality Products."
+          descripcion="Tendrás un descuento especial en productos de Quality Products"
         />
         <Izquierdo
           imagen={`${beneficio3}`}
           titulo="Dos clases en vivo"
-          descripcion="Para todos los colaboradores y sucriptores."
+          descripcion="Para todos los colaboradores y suscriptores."
         />
         <Derecho
           imagen={`${beneficio4}`}
@@ -43,7 +43,7 @@ const Beneficios = () => {
         <Izquierdo
           imagen={`${beneficio5}`}
           titulo="Contribuirás a las donaciones de caridad"
-          descripcion="Parte del dinero de tu suscripción sera donada o utilizada para realizar ayuda social."
+          descripcion="Parte del dinero de tu suscripción será donada o utilizada para realizar ayuda social."
         />
         </div>
 

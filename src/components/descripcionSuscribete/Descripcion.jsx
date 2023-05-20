@@ -1,16 +1,13 @@
-import React from 'react'
-import './estilos.scss'
+import React from "react";
+import "./estilos.scss";
 const Descripcion = (props) => {
-
-    const { descripcion} = props.parrafo;
+  const { descripcion } = props.parrafo;
 
   return (
     <>
-        <div className='container-parrafo'>
-          <p >{descripcion}</p>
-        </div>
+      <li className="lista-descripcion">{descripcion}</li>
     </>
-  )
-}
+  );
+};
 
-export default Descripcion
+export default Descripcion;

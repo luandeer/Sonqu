@@ -94,18 +94,26 @@ section{
     transition: var(--transition);
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(min(250px, 100%),1fr));
-    gap: 0.2rem;
+    gap: 0.5rem;
     justify-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .container-suscribete-2 h1{
-    padding: 2rem;
+    width: 80%;
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     line-height: 1.35rem;
     color: var(--color-1);
+}
+
+.container-suscribete-2 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding-right:1.7rem;
 }
 //Fin container-suscribete-2
 
@@ -157,7 +165,7 @@ section{
 
 //Fin container-suscribete-3
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1160px) {
     .container-suscribete-1{
         grid-template-columns: 1fr;  
         gap: 0.5rem;
@@ -188,5 +196,11 @@ section{
     
     .container-suscribete-2{
         grid-template-columns: repeat(1,1fr);
+    }
+    .container-suscribete-2 h1{
+        width: 100%;
+    }
+    .container-suscribete-2 ul{
+        padding-left:1.7rem;
     }
 }
